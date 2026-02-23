@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Médica - BATI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        h1 { color: #2c3e50; margin: 0; font-size: 2.5em; letter-spacing: 2px; }
+        h2 { color: #e67e22; border-left: 5px solid #e67e22; padding-left: 10px; margin-top: 30px; }
+        
+        .grid-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            background: #fdf2e9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .med-card {
+            background: #ebf5fb;
+            border-left: 5px solid #3498db;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .emergency {
+            background: #fdeaea;
+            border: 2px solid #e74c3c;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .tip {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #555;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th { background-color: #f8f9fa; }
+        .highlight { font-weight: bold; color: #2c3e50; }
+        
+        @media (max-width: 600px) {
+            .grid-info { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>- BATI -</h1>
+        <p>Ficha de Cuidados y Salud</p>
+    </header>
+
+    <section>
+        <h2>INFORMACIÓN PERSONAL</h2>
+        <div class="grid-info">
+            <div><span class="highlight">Fecha de Nacimiento:</span> 28 de enero de 2022</div>
+            <div><span class="highlight">Edad:</span> 4 años</div>
+            <div><span class="highlight">Sexo:</span> Macho</div>
+            <div><span class="highlight">Raza:</span> Mestizo</div>
+            <div><span class="highlight">Peso:</span> 12,5 kg</div>
+            <div><span class="highlight">Otros:</span> Castrado / Vacunas al día</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>MEDICACIÓN DIARIA</h2>
+        <div class="med-card">
+            <strong>Prednisolona 5mg</strong> (Tratamiento Addison)<br>
+            Dosis: Medio comprimido cada 12hs.<br>
+            <span class="highlight">Horarios: 10:00 AM | 10:00 PM</span>
+        </div>
+        <div class="med-card" style="border-left-color: #27ae60; background-color: #eafaf1;">
+            <strong>Rumiclamox 500mg</strong> (Antibiótico piel)<br>
+            Dosis: Medio comprimido (o dos cuartos) cada 12hs.<br>
+            <span class="highlight">Horarios: 10:00 AM | 10:00 PM</span>
+        </div>
+        <div class="tip">
+            <strong>Recomendaciones:</strong>
+            <ul>
+                <li>Administrar ambos escondidos en un pedazo de <strong>muzzarella</strong>.</li>
+                <li>El Rumiclamox es <strong>fotosensible</strong>: cortar en el momento y guardar el resto en su envase original.</li>
+                <li>Es mejor cortarlo en cuartos al ser muy grande.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>ALIMENTACIÓN Y SUPLEMENTOS</h2>
+        <p><strong>Dieta:</strong> Natural cocida (Cerdo). 1 vianda = 1 día (Repartir en almuerzo y cena).</p>
+        <table>
+            <tr>
+                <th>Tipo</th>
+                <th>Detalle</th>
+            </tr>
+            <tr>
+                <td>Ingredientes</td>
+                <td>Carré de cerdo, Zapallo, zapallito, zanahoria, hígado/corazón vacuno, huevo, aceite (oliva/coco), semillas, carbonato de calcio.</td>
+            </tr>
+            <tr>
+                <td><strong>Aucic caps</strong> (Omega 3)</td>
+                <td>1 cápsula diaria con el almuerzo.</td>
+            </tr>
+            <tr>
+                <td><strong>Cáscara de huevo</strong></td>
+                <td>Espolvorear un poquitito en el almuerzo y revolver.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="emergency">
+        <h2 style="margin-top: 0; color: #c0392b;">EMERGENCIAS 24HS</h2>
+        <p><strong>Hospital Veterinario Adrogué:</strong> Av. H. Yrigoyen 13.964, Adrogué.<br>
+           Tel: 4294-4848 | WA: 11-3929-6006</p>
+        <hr>
+        <p><strong>CEVEDE Banfield:</strong> Av. H. Yrigoyen 8.017, Banfield.<br>
+           Tel: 4242-2254 | WA: 11-3773-9690</p>
+    </section>
+
+    <section>
+        <h2>EQUIPO MÉDICO</h2>
+        <table>
+            <tr>
+                <td><strong>Endocrinología</strong></td>
+                <td>Fernanda Hernandez (Hosp. Adrogué)</td>
+            </tr>
+            <tr>
+                <td><strong>Dermatología</strong></td>
+                <td>Guillermo Broglia (Hosp. Adrogué)</td>
+            </tr>
+            <tr>
+                <td><strong>Cabecera</strong></td>
+                <td>Bárbara González (Mármol) - 11-5596-8184</td>
+            </tr>
+            <tr>
+                <td><strong>Laboratorio</strong></td>
+                <td>Centro Vet. Adrogué - 11-6159-6694</td>
+            </tr>
+        </table>
+    </section>
+</div>
+
+</body>
+</html>
