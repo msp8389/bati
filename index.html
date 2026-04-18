@@ -87,6 +87,11 @@
         }
         th { background-color: #f8f9fa; }
         .highlight { font-weight: bold; color: #2c3e50; }
+        .med-card-secondary {
+            border-left-color: #27ae60;
+            background-color: #eafaf1;
+        }
+        .emergency h2 { margin-top: 0; color: #c0392b; }
         
         @media (max-width: 600px) {
             .grid-info { grid-template-columns: 1fr; }
@@ -123,7 +128,7 @@
             Dosis: Medio comprimido cada 12hs.<br>
             <span class="highlight">Horarios: 10:00 AM | 10:00 PM</span>
         </div>
-        <div class="med-card" style="border-left-color: #27ae60; background-color: #eafaf1;">
+        <div class="med-card med-card-secondary">
             <strong>Rumiclamox 500mg</strong> (Antibiótico piel)<br>
             Dosis: Medio comprimido (o dos cuartos) cada 12hs.<br>
             <span class="highlight">Horarios: 10:00 AM | 10:00 PM</span>
@@ -142,27 +147,31 @@
         <h2>ALIMENTACIÓN Y SUPLEMENTOS</h2>
         <p><strong>Dieta:</strong> Natural cocida (Cerdo). 1 vianda = 1 día (Repartir en almuerzo y cena).</p>
         <table>
-            <tr>
-                <th>Tipo</th>
-                <th>Detalle</th>
-            </tr>
-            <tr>
-                <td>Ingredientes</td>
-                <td>Carré de cerdo, Zapallo, zapallito, zanahoria, hígado/corazón vacuno, huevo, aceite (oliva/coco), semillas, carbonato de calcio.</td>
-            </tr>
-            <tr>
-                <td><strong>Aucic caps</strong> (Omega 3)</td>
-                <td>1 cápsula diaria con el almuerzo.</td>
-            </tr>
-            <tr>
-                <td><strong>Cáscara de huevo</strong></td>
-                <td>Espolvorear un poquitito en el almuerzo y revolver.</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Detalle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ingredientes</td>
+                    <td>Carré de cerdo, Zapallo, zapallito, zanahoria, hígado/corazón vacuno, huevo, aceite (oliva/coco), semillas, carbonato de calcio.</td>
+                </tr>
+                <tr>
+                    <td><strong>Aucic caps</strong> (Omega 3)</td>
+                    <td>1 cápsula diaria con el almuerzo.</td>
+                </tr>
+                <tr>
+                    <td><strong>Cáscara de huevo</strong></td>
+                    <td>Espolvorear un poquitito en el almuerzo y revolver.</td>
+                </tr>
+            </tbody>
         </table>
     </section>
 
     <section class="emergency">
-        <h2 style="margin-top: 0; color: #c0392b;">EMERGENCIAS 24HS</h2>
+        <h2>EMERGENCIAS 24HS</h2>
         <p><strong>Hospital Veterinario Adrogué:</strong> Av. H. Yrigoyen 13.964, Adrogué.<br>
            Tel: 4294-4848 | WA: 11-3929-6006</p>
         <hr>
@@ -173,22 +182,24 @@
     <section>
         <h2>EQUIPO MÉDICO</h2>
         <table>
-            <tr>
-                <td><strong>Endocrinología</strong></td>
-                <td>Fernanda Hernandez (Hosp. Adrogué)</td>
-            </tr>
-            <tr>
-                <td><strong>Dermatología</strong></td>
-                <td>Guillermo Broglia (Hosp. Adrogué)</td>
-            </tr>
-            <tr>
-                <td><strong>Cabecera</strong></td>
-                <td>Bárbara González (Bynnon 4350, José Mármol) - 11-5596-8184</td>
-            </tr>
-            <tr>
-                <td><strong>Laboratorio</strong></td>
-                <td>Centro Vet. Adrogué (Mitre 1783, Adrogué) - 11-6159-6694</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <th scope="row">Endocrinología</th>
+                    <td>Fernanda Hernandez (Hosp. Adrogué)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dermatología</th>
+                    <td>Guillermo Broglia (Hosp. Adrogué)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cabecera</th>
+                    <td>Bárbara González (Bynnon 4350, José Mármol) - 11-5596-8184</td>
+                </tr>
+                <tr>
+                    <th scope="row">Laboratorio</th>
+                    <td>Centro Vet. Adrogué (Mitre 1783, Adrogué) - 11-6159-6694</td>
+                </tr>
+            </tbody>
         </table>
     </section>
 </div>
